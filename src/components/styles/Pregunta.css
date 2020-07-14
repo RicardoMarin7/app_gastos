@@ -1,0 +1,16 @@
+.Pregunta__title{
+    color: #DE7C00;
+    text-align: center;
+}
+
+.Pregunta__container{
+    background-color: white;
+    border-radius: 1em;
+    margin: 3em auto;
+    padding: 2em;
+}
+
+input[type="number"],button[type="submit"]{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
