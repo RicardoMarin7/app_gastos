@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
 html{
   min-height: 100%;
 }
@@ -6,17 +7,9 @@ html{
 body{
   margin:0;
   padding:0;
-  background-image: linear-gradient(to right,#869CAE, #688197,#506D85);
+  background-image: linear-gradient(190deg,rgb(241,156,73,.8) 10%, rgb(255,152,0,.8)20%,rgba(0,169,224,.8));
   min-height: 100%;
-  font-family: 'Raleway', sans-serif;
-}
-
-.App__container{
-  max-width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1{font-size: 3em;} h2{font-size: 2em;} h3{font-size: 1.5em;} h4{font-size: 1em;}
@@ -31,4 +24,102 @@ h1{
 .u-full-width{
   min-width: 100%;
   box-sizing: border-box;
+}
+
+
+input[type="number"],button[type="submit"], input[type="text"]{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="textarea"]{
+  border-color: #ff9205;
+  
+}
+
+label{
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.center{text-align: center;}
+
+.container{
+  background-color: white;
+  border-radius: 1.2em;
+  margin: 3em auto;
+  padding: 2em;
+}
+
+@media (min-width: 300px) {
+  .container {
+    width: 93%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+}
+
+h2{
+  text-align: center;
+  color: #DE7C00;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ff9205;
+  border-radius: .3em;
+  padding-left: .3em;
+  overflow: hidden;
+}
+
+span{
+  display: block;
+  background-color: #ff9205;
+  color: white;
+  height: 2em;
+  padding: .3em;
+  line-height: 2em;
+}
+p{
+  margin: 0;
+}
+
+.alert{
+  font-size: 1em;
+  color: black;
+  padding:.5em;
+  border-radius: .3em;
+  height: auto;
+  margin-bottom: .3em;
+}
+
+.alert-danger{
+  background-color: rgba(228 ,143 ,147,.6);
+  color: rgb(173, 0, 9);;
+  
+}
+
+.alert-primary{
+  background-color: rgba(108,194,74,0.4);
+  color:rgb(37, 131, 0);
+}
+
+.alert-none{
+  background-color: rgba(153,214,234,.6);
+  color:rgb(5, 122, 190);
+}
+
+.alert-warning{
+  background-color: rgba(255, 229, 60, 0.6);
+  color: rgb(151, 131, 0);
 }
