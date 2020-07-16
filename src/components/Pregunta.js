@@ -23,6 +23,7 @@ const Pregunta = ({setPresupuesto, setRestante, setPregunta, presupuestoGuardado
         setRestante(cantidad)
         setPregunta(false)
         presupuestoGuardado = localStorage.setItem('presupuesto',cantidad)
+        localStorage.setItem('restante',cantidad)
     }
 
     return(
