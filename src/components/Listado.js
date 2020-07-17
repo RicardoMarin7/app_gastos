@@ -2,17 +2,20 @@ import React from 'react'
 import Gasto from './Gasto'
 
 const Listado = ({gastos}) =>{
-
-    if(gastos){
+    if(gastos.length > 0){
+        console.log(gastos)
         return(
-            <ul>
-                {gastos.map( gasto =>(
-                    <Gasto 
-                        key={gasto.id}
-                        gasto={gasto} 
-                    />
-                ))}
-            </ul>
+            <React.Fragment>
+                <h2>Lista de Gastos</h2>
+                <ul>
+                    {gastos.map( gasto =>(
+                        <Gasto 
+                            key={gasto.id}
+                            gasto={gasto} 
+                        />
+                    ))}
+                </ul>
+            </React.Fragment>
         )
     }
 

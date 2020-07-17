@@ -6,11 +6,17 @@ import ControlPresupuesto from './components/ControlPresupuesto'
 
 function App() {
 
+
+
   let mostrarPregunta
   let presupuestoGuardado = localStorage.getItem('presupuesto')
   let restanteGuardado = localStorage.getItem('restante')
   let gastosGuardados = JSON.parse(localStorage.getItem('gastos'))
 
+  if( gastosGuardados === null){
+    gastosGuardados = []    
+  }
+  
   if(presupuestoGuardado){
     mostrarPregunta = false
   }
